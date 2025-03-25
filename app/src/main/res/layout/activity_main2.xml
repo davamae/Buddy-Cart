@@ -40,18 +40,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="409dp"
-        android:layout_height="190dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/historyButton"
-        app:srcCompat="@drawable/banner" />
-
     <ImageButton
         android:id="@+id/imageButton7"
         android:layout_width="65dp"
@@ -115,5 +103,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/person" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="424dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordersButton"
+        app:srcCompat="@drawable/banner" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
