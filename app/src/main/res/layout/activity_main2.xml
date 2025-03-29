@@ -54,34 +54,40 @@
 
     <Button
         android:id="@+id/historyButton"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="50dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
         android:backgroundTint="#0059FF"
         android:text="History"
+        app:layout_constraintEnd_toStartOf="@+id/ordersButton"
         app:layout_constraintStart_toEndOf="@+id/favoritesButton"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <Button
         android:id="@+id/ordersButton"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="50dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="3dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#0059FF"
         android:text="Orders"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/historyButton"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <Button
         android:id="@+id/favoritesButton"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="50dp"
         android:layout_marginStart="13dp"
         android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#0059FF"
         android:text="Favorites"
+        app:layout_constraintEnd_toStartOf="@+id/historyButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
