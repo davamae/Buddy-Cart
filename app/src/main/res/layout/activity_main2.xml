@@ -10,35 +10,80 @@
     android:foregroundTint="#00FFFFFF"
     tools:context=".MainActivity2">
 
-    <Button
-        android:id="@+id/historyButton"
+    <TextView
+        android:id="@+id/bananaText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginStart="37dp"
+        android:text="Banana"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bananaImage" />
+
+    <TextView
+        android:id="@+id/appleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="Apple"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/bananaText"
+        app:layout_constraintTop_toBottomOf="@+id/appleImage" />
+
+    <TextView
+        android:id="@+id/shirtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="2dp"
+        android:text="Shirt"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/appleText"
+        app:layout_constraintTop_toBottomOf="@+id/shirtImage" />
+
+    <TextView
+        android:id="@+id/soapText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="24dp"
+        android:text="Soap"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soapImage" />
+
+    <Button
+        android:id="@+id/historyButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#0059FF"
         android:text="History"
         app:layout_constraintStart_toEndOf="@+id/favoritesButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <Button
         android:id="@+id/ordersButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="#0059FF"
         android:text="Orders"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <Button
         android:id="@+id/favoritesButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="90dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#0059FF"
         android:text="Favorites"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -113,7 +158,111 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ordersButton"
+        app:layout_constraintTop_toBottomOf="@+id/historyButton"
         app:srcCompat="@drawable/banner" />
+
+    <TextView
+        android:id="@+id/itemsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="11dp"
+        android:text="Items"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton16" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:text="Title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bananaText" />
+
+    <ImageView
+        android:id="@+id/bananaImage"
+        android:layout_width="87dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemsText"
+        app:srcCompat="@drawable/banana" />
+
+    <ImageView
+        android:id="@+id/appleImage"
+        android:layout_width="87dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/bananaImage"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton16"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/shirtImage"
+        android:layout_width="87dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toEndOf="@+id/appleImage"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton16"
+        app:srcCompat="@drawable/shirt" />
+
+    <ImageView
+        android:id="@+id/soapImage"
+        android:layout_width="87dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toEndOf="@+id/shirtImage"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton16"
+        app:srcCompat="@drawable/soap" />
+
+    <ImageView
+        android:id="@+id/eggImage"
+        android:layout_width="120dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        app:srcCompat="@drawable/egg" />
+
+    <ImageView
+        android:id="@+id/honeyImage"
+        android:layout_width="120dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@+id/eggImage"
+        app:layout_constraintTop_toBottomOf="@+id/appleText"
+        app:srcCompat="@drawable/honey" />
+
+    <ImageView
+        android:id="@+id/shirtImage2"
+        android:layout_width="120dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shirtText"
+        app:srcCompat="@drawable/shirt" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="409dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
