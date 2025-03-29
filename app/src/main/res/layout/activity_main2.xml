@@ -86,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/cartImageButton"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="16dp"
@@ -95,11 +95,11 @@
         android:foregroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton12"
+        app:layout_constraintStart_toEndOf="@+id/mapImageButton"
         app:srcCompat="@drawable/cart" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/houseImageButton"
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:layout_marginStart="16dp"
@@ -111,7 +111,7 @@
         app:srcCompat="@drawable/house" />
 
     <ImageButton
-        android:id="@+id/imageButton12"
+        android:id="@+id/mapImageButton"
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:layout_marginStart="17dp"
@@ -120,11 +120,11 @@
         android:scaleType="fitCenter"
         android:tint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:layout_constraintStart_toEndOf="@+id/houseImageButton"
         app:srcCompat="@drawable/maps" />
 
     <ImageButton
-        android:id="@+id/imageButton14"
+        android:id="@+id/bellimageButton"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_marginStart="20dp"
@@ -133,11 +133,11 @@
         android:scaleType="fitCenter"
         android:tint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintStart_toEndOf="@+id/cartImageButton"
         app:srcCompat="@drawable/bell" />
 
     <ImageButton
-        android:id="@+id/imageButton15"
+        android:id="@+id/personImageButton"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_marginEnd="16dp"
@@ -150,7 +150,7 @@
         app:srcCompat="@drawable/person" />
 
     <ImageButton
-        android:id="@+id/imageButton16"
+        android:id="@+id/discountImageButton"
         android:layout_width="424dp"
         android:layout_height="219dp"
         android:layout_marginTop="12dp"
@@ -171,7 +171,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton16" />
+        app:layout_constraintTop_toBottomOf="@+id/discountImageButton" />
 
     <TextView
         android:id="@+id/titleText"
@@ -202,7 +202,7 @@
         android:layout_marginStart="26dp"
         android:layout_marginTop="44dp"
         app:layout_constraintStart_toEndOf="@+id/bananaImage"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton16"
+        app:layout_constraintTop_toBottomOf="@+id/discountImageButton"
         app:srcCompat="@drawable/apple" />
 
     <ImageView
@@ -212,7 +212,7 @@
         android:layout_marginStart="14dp"
         android:layout_marginTop="42dp"
         app:layout_constraintStart_toEndOf="@+id/appleImage"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton16"
+        app:layout_constraintTop_toBottomOf="@+id/discountImageButton"
         app:srcCompat="@drawable/shirt" />
 
     <ImageView
@@ -222,7 +222,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="42dp"
         app:layout_constraintStart_toEndOf="@+id/shirtImage"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton16"
+        app:layout_constraintTop_toBottomOf="@+id/discountImageButton"
         app:srcCompat="@drawable/soap" />
 
     <ImageView
