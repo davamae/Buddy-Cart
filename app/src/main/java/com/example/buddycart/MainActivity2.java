@@ -29,6 +29,16 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
+        //bellimageButton clicklistener
+        ImageButton bellImageButton = findViewById(R.id.bellimageButton);
+        bellImageButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                //navigate to Contacts screen when bellImageButton clicked
+                Intent intent = new Intent(MainActivity2.this, Contacts.class);
+                startActivity(intent);
+            }
+        });
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

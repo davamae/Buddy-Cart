@@ -7,21 +7,147 @@
     android:layout_height="match_parent"
     tools:context=".Contacts">
 
-    <TextView
-        android:id="@+id/contactsText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contacts"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="44dp" />
-
     <ImageView
         android:id="@+id/boy"
         android:layout_width="84dp"
         android:layout_height="82dp"
-        app:srcCompat="@drawable/boy"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="90dp" />
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toStartOf="@+id/textDescript1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactsText"
+        app:srcCompat="@drawable/boy" />
+
+    <ImageView
+        android:id="@+id/girlimage"
+        android:layout_width="84dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toStartOf="@+id/textDescript2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boy"
+        app:srcCompat="@drawable/girl" />
+
+    <ImageView
+        android:id="@+id/girl2image"
+        android:layout_width="84dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toStartOf="@+id/textDescript3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girlimage"
+        app:srcCompat="@drawable/girl2" />
+
+    <ImageView
+        android:id="@+id/boy2image"
+        android:layout_width="84dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toStartOf="@+id/textDescript4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girl2image"
+        app:srcCompat="@drawable/boy2" />
+
+    <ImageView
+        android:id="@+id/girl4image"
+        android:layout_width="84dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toStartOf="@+id/textDescript5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boy2image"
+        app:srcCompat="@drawable/girl4" />
+
+    <ImageView
+        android:id="@+id/girl3image"
+        android:layout_width="84dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toStartOf="@+id/textDescript6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girl4image"
+        app:srcCompat="@drawable/girl3" />
+
+    <TextView
+        android:id="@+id/textDescript1"
+        android:layout_width="272dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="15dp"
+        android:text="Julian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDescript2"
+        android:layout_width="272dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="15dp"
+        android:text="Jess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescript1" />
+
+    <TextView
+        android:id="@+id/textDescript3"
+        android:layout_width="272dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="15dp"
+        android:text="Nadine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescript2" />
+
+    <TextView
+        android:id="@+id/textDescript4"
+        android:layout_width="272dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:text="Dominic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescript3" />
+
+    <TextView
+        android:id="@+id/textDescript5"
+        android:layout_width="272dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="15dp"
+        android:text="Sarah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescript4" />
+
+    <TextView
+        android:id="@+id/textDescript6"
+        android:layout_width="272dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
+        android:text="Ashley"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescript5" />
+
+    <TextView
+        android:id="@+id/contactsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="37dp"
+        android:text="Contacts"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

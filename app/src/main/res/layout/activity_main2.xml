@@ -161,11 +161,11 @@
         android:layout_height="219dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="#00FFFFFF"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/historyButton"
-        app:srcCompat="@drawable/banner" />
+        app:srcCompat="@drawable/discountbanner" />
 
     <TextView
         android:id="@+id/itemsText"
