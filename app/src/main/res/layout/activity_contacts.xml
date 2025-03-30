@@ -7,6 +7,69 @@
     android:layout_height="match_parent"
     tools:context=".Contacts">
 
+    <ImageButton
+        android:id="@+id/houseImageButton3"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/house" />
+
+    <ImageButton
+        android:id="@+id/mapImageButton3"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:tint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/houseImageButton3"
+        app:srcCompat="@drawable/maps" />
+
+    <ImageButton
+        android:id="@+id/cartImageButton3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foregroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mapImageButton3"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageButton
+        android:id="@+id/bellimageButton3"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:tint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cartImageButton3"
+        app:srcCompat="@drawable/bell" />
+
+    <ImageButton
+        android:id="@+id/personImageButton3"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
+        android:tint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/person" />
+
     <ImageView
         android:id="@+id/boy"
         android:layout_width="84dp"
