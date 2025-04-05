@@ -9,6 +9,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+
 public class LoginCodeActivity extends AppCompatActivity {
 
     String phoneNumber;
@@ -24,10 +30,16 @@ public class LoginCodeActivity extends AppCompatActivity {
         //getting phone number from intent
         phoneNumber = getIntent().getStringExtra("phone");
 
+        //generate random 5-digit number
+        Random random = new Random();
+        int randomCode = 10000 + random.nextInt(90000);//ensures 5-digit num is between 10000 and 99999
+
         //display phone number in toast
         if(phoneNumber != null) {
-            Toast.makeText(getApplicationContext(), phoneNumber, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Your code is: " + randomCode, Toast.LENGTH_SHORT).show();
+
         }
+
 
 
 
