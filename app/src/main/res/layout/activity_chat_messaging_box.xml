@@ -44,7 +44,7 @@
 
         <TextView
             android:id="@+id/hey_text"
-            android:layout_width="122dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
@@ -61,7 +61,7 @@
 
         <TextView
             android:id="@+id/up_text"
-            android:layout_width="122dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"

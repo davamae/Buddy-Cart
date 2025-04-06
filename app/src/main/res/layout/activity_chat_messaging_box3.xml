@@ -44,7 +44,7 @@
 
         <TextView
             android:id="@+id/trip_text"
-            android:layout_width="220dp"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
@@ -79,7 +79,7 @@
 
         <TextView
             android:id="@+id/np_text"
-            android:layout_width="220dp"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
@@ -150,7 +150,7 @@
 
         <TextView
             android:id="@+id/sure_text"
-            android:layout_width="100dp"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"

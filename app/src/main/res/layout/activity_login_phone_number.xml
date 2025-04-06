@@ -109,12 +109,13 @@
             android:text="Send code"
             android:layout_weight="20"
             android:id="@+id/send_code_btn"/>
-        <ProgressBar
-            android:layout_width="32dp"
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:indeterminateTint="@color/my_primary"
-            android:layout_gravity="center"
-            android:id="@+id/login_progress_bar"/>
+            android:backgroundTint="@color/my_secondary"
+            android:text="Back"
+            android:layout_weight="20"
+            android:id="@+id/back_btn"/>
 
     </LinearLayout>
 
