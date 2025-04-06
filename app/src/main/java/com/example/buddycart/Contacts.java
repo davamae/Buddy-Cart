@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -27,6 +28,9 @@ public class Contacts extends AppCompatActivity {
     ChatFragment chatFragment;
     ProfileFragment profileFragment;
 
+    //contacts
+    LinearLayout jayContact;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,8 +40,18 @@ public class Contacts extends AppCompatActivity {
         chatFragment = new ChatFragment();
         profileFragment = new ProfileFragment();
 
+
+        //initializing views
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         searchButton = findViewById(R.id.main_search_button);
+        jayContact = findViewById(R.id.jay_contact);
+
+        //set onClickListener for jaycontact
+        jayContact.setOnClickListener((v)->{
+            //start chatMessagingBox activity
+            Intent intent = new Intent(Contacts.this, ChatMessagingBox.class);
+            startActivity(intent);
+        });
 
         searchButton.setOnClickListener((v)->{
             startActivity(new Intent(Contacts.this, SearchUserActivity.class));
