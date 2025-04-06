@@ -52,23 +52,16 @@ public class Contacts extends AppCompatActivity {
                 if(item.getItemId() == R.id.menu_profile){
                     getSupportFragmentManager().beginTransaction().replace(R.id.main_frame_layout, profileFragment).commit();
                 }
+                if(item.getItemId() == R.id.menu_add){
+                    Intent intent = new Intent(Contacts.this, LoginPhoneNumberActivity.class);
+                    startActivity(intent);
+                }
 
             }
         });
 
         bottomNavigationView.setSelectedItemId(R.id.menu_chat);
 
-
-        Button addButton = findViewById(R.id.addButton);
-
-       addButton.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               //open login phone number activity screen
-               Intent intent = new Intent(Contacts.this, LoginPhoneNumberActivity.class);
-               startActivity(intent);
-           }
-       });
 
 
 
