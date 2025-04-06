@@ -1,6 +1,8 @@
 package com.example.buddycart;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -37,8 +39,15 @@ public class LoginCodeActivity extends AppCompatActivity {
         //display phone number in toast
         if(phoneNumber != null) {
             Toast.makeText(getApplicationContext(), "Your code is: " + randomCode, Toast.LENGTH_SHORT).show();
-
         }
+
+        //setup next button to navigate to LoginUsernameActivity
+        Button nextButton = findViewById(R.id.login_next_btn);
+        nextButton.setOnClickListener(v ->{
+            //start LoginUsernameActivity when next btn pressed
+            Intent intent = new Intent(LoginCodeActivity.this, LoginUsernameActivity.class);
+            startActivity(intent);
+        });
 
 
 
