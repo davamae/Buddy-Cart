@@ -49,8 +49,9 @@ public class Contacts extends AppCompatActivity {
                 if(item.getItemId() == R.id.menu_chat){
                     getSupportFragmentManager().beginTransaction().replace(R.id.main_frame_layout, chatFragment).commit();
                 }
-                if(item.getItemId() == R.id.menu_profile){
-                    getSupportFragmentManager().beginTransaction().replace(R.id.main_frame_layout, profileFragment).commit();
+                if(item.getItemId() == R.id.menu_home){
+                    Intent intent2 = new Intent(Contacts.this, MainActivity2.class);
+                    startActivity(intent2);
                 }
                 if(item.getItemId() == R.id.menu_add){
                     Intent intent = new Intent(Contacts.this, LoginPhoneNumberActivity.class);
