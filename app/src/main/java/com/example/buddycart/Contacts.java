@@ -31,6 +31,7 @@ public class Contacts extends AppCompatActivity {
     //contacts
     LinearLayout jayContact;
     LinearLayout sophiaContact;
+    LinearLayout benContact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +48,7 @@ public class Contacts extends AppCompatActivity {
         searchButton = findViewById(R.id.main_search_button);
         jayContact = findViewById(R.id.jay_contact);
         sophiaContact = findViewById(R.id.sophia_contact);
+        benContact = findViewById(R.id.ben_contact);
 
         //set onClickListener for jaycontact
         jayContact.setOnClickListener((v)->{
@@ -58,8 +60,15 @@ public class Contacts extends AppCompatActivity {
         //set onClickListener for sophiacontact
         sophiaContact.setOnClickListener((v)->{
             //start chatMessagingBox2 activity
-            Intent intent2 = new Intent(Contacts.this, ChatMessagingBox2.class);
-            startActivity(intent2);
+            Intent intent = new Intent(Contacts.this, ChatMessagingBox2.class);
+            startActivity(intent);
+        });
+
+        //set onClickListener for bencontact
+        benContact.setOnClickListener((v)->{
+            //start chatMessagingBox2 activity
+            Intent intent = new Intent(Contacts.this, ChatMessagingBox3.class);
+            startActivity(intent);
         });
 
         searchButton.setOnClickListener((v)->{

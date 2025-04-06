@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatMessagingBox">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_primary"
+        android:padding="10dp"
+        android:id="@+id/toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ben"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_button"/>
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon_back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:id="@+id/back_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="10dp"
+        android:id="@+id/search_user_layout">
+
+        <TextView
+            android:id="@+id/trip_text"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:backgroundTint="@color/green"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:text="hey im heading to the store now"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/thanks_text"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/sky_blue"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="oh right thanks man, i'll be home in 5"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/np_text"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:backgroundTint="@color/green"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="np, anything you wanted to add?"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/nah_text"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/sky_blue"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="nah not rn"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/grab_text"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/green"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="ok see you in a few. gonna grab some snacks too"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/green"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="you sure you got nothing else you want from the store?"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/sure_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:backgroundTint="@color/sky_blue"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="yeah im sure"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/actually_text"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:backgroundTint="@color/sky_blue"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="actually you know what"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/cereal_text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:backgroundTint="@color/sky_blue"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="can you add a box of cheerios cereal too"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/lol_text"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="540dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:backgroundTint="@color/green"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="lol sure"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:layout_marginTop="590dp"
+            android:hint="Write message here"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:layout_toLeftOf="@+id/forward_button"
+            android:id="@+id/message_input"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/forward_icon"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/forward_button"
+            app:tint="@color/my_primary"
+            android:padding="4dp"
+            android:layout_marginTop="590dp"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
