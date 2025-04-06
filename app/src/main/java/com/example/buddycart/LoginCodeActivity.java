@@ -24,6 +24,8 @@ public class LoginCodeActivity extends AppCompatActivity {
     String phoneNumber;
     TextView resendCodeTextView;
 
+    CountDownTimer countDownTimer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +58,7 @@ public class LoginCodeActivity extends AppCompatActivity {
         });
 
         //setup countdown timer for 30secs
-        new CountDownTimer(30000, 1000){ //30 secs, 1 sec interval
+        countDownTimer = new CountDownTimer(30000, 1000){ //30 secs, 1 sec interval
             public void onTick(long millisUntilFinished){
                 //update "resend code" text with the remaining time
                 int secondsRemaining = (int)millisUntilFinished / 1000;
@@ -75,7 +77,10 @@ public class LoginCodeActivity extends AppCompatActivity {
                 //optionally, restart code if you want it to loop continuously
                 start();
             }
-        } .start();
+        };
+
+        //start countdown timer
+        countDownTimer.start();
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -83,5 +88,13 @@ public class LoginCodeActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    protected void onPause(){
+        super.onPause();
+        //cancel countdown timer when activity is paused (ie. navigated to next screen)
+        if(countDownTimer != null){
+            countDownTimer.cancel();
+        }
     }
 }

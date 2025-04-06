@@ -13,6 +13,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.buddycart.model.UserModel;
+
 public class LoginUsernameActivity extends AppCompatActivity {
 
     EditText nameInput;
@@ -30,14 +32,24 @@ public class LoginUsernameActivity extends AppCompatActivity {
         nextBtn = findViewById(R.id.login_next_btn);
         progressBar = findViewById(R.id.login_progress_bar);
 
+        progressBar.setVisibility(View.GONE);
+
         //get phonenumber from intent
         phoneNumber = getIntent().getStringExtra("phone");
+        String name = nameInput.getText().toString();
+
+        //create User object
+        UserModel user = new UserModel(name, phoneNumber);
+
+        //save user to a list
+        UserData.getInstance().addUser(user);
+
 
         //setup next button to navigate to LoginUsernameActivity
         nextBtn.setOnClickListener(v ->{
             //start LoginUsernameActivity when next btn pressed
-            Intent intent = new Intent(LoginUsernameActivity.this, Contacts.class);
-            startActivity(intent);
+            Intent intent2 = new Intent(LoginUsernameActivity.this, Contacts.class);
+            startActivity(intent2);
         });
 
 

@@ -12,6 +12,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.buddycart.adapter.SearchUserRecyclerAdapter;
+import com.example.buddycart.model.UserModel;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class SearchUserActivity extends AppCompatActivity {
 
     EditText searchInput;
@@ -54,6 +60,16 @@ public class SearchUserActivity extends AppCompatActivity {
     }
 
     void setupSearchRecyclerView(String searchTerm){
+
+        List<UserModel> users = UserData.getInstance().getUsers();
+
+        //filter users by search term
+        List<UserModel> filteredUsers = new ArrayList<>();
+        for(UserModel user: users){
+            if(user.getName().toLowerCase().contains(searchTerm.toLowerCase())){
+                filteredUsers.add(user);
+            }
+        }
 
     }
 }

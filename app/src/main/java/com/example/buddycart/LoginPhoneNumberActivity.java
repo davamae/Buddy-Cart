@@ -31,14 +31,18 @@ public class LoginPhoneNumberActivity extends AppCompatActivity {
         progressBar.setVisibility(View.GONE);
 
         sendCodeBtn.setOnClickListener((v)->{
-            //get phone number entered in editText
-            String phoneNumber = phoneInput.getText().toString();
 
             //intent to start LoginCodeActivity
             Intent intent = new Intent(LoginPhoneNumberActivity.this, LoginCodeActivity.class);
 
+            //get phone number entered in editText
+            String phoneNumber = phoneInput.getText().toString();
+
             //pass phone number as an extra in the intent
             intent.putExtra("phone", phoneNumber);
+            Intent intent2 = new Intent(LoginPhoneNumberActivity.this, LoginUsernameActivity.class);
+            intent2.putExtra("phone", phoneNumber);
+            startActivity(intent);
 
             //start loginCodeActivity
             startActivity(intent);
