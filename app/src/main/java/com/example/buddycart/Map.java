@@ -59,7 +59,7 @@ public class Map extends FragmentActivity implements OnMapReadyCallback {
         ImageButton mapImageButton = findViewById(R.id.houseImageButton);
         mapImageButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                //navigate to map screen when mapImageButton clicked
+                //navigate to main screen when housImageButton clicked
                 Intent intent = new Intent(Map.this, MainActivity2.class);
                 startActivity(intent);
             }
