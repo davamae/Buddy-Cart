@@ -25,6 +25,9 @@
             android:name=".shoppingPage"
             android:exported="false" />
         <activity
+            android:name=".SearchUserActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginUsernameActivity"
             android:exported="false" />
         <activity

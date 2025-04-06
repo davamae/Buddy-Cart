@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,220 +7,207 @@
     android:layout_height="match_parent"
     tools:context=".Contacts">
 
-    <ImageButton
-        android:id="@+id/houseImageButton3"
-        android:layout_width="61dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="4dp"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/house" />
-
-    <ImageButton
-        android:id="@+id/mapImageButton3"
-        android:layout_width="61dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginBottom="4dp"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="fitCenter"
-        android:tint="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/houseImageButton3"
-        app:srcCompat="@drawable/maps" />
-
-    <ImageButton
-        android:id="@+id/cartImageButton3"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="12dp"
-        android:backgroundTint="#00FFFFFF"
-        android:foregroundTint="#00FFFFFF"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/mapImageButton3"
-        app:srcCompat="@drawable/cart" />
-
-    <ImageButton
-        android:id="@+id/bellimageButton3"
-        android:layout_width="57dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginBottom="4dp"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="fitCenter"
-        android:tint="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cartImageButton3"
-        app:srcCompat="@drawable/bell" />
-
-    <ImageButton
-        android:id="@+id/personImageButton3"
-        android:layout_width="57dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="4dp"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="centerInside"
-        android:tint="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/person" />
-
-    <ImageView
-        android:id="@+id/boy"
-        android:layout_width="84dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="23dp"
-        app:layout_constraintEnd_toStartOf="@+id/textDescript1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contactsText"
-        app:srcCompat="@drawable/boy" />
-
-    <ImageView
-        android:id="@+id/girlimage"
-        android:layout_width="84dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="22dp"
-        app:layout_constraintEnd_toStartOf="@+id/textDescript2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boy"
-        app:srcCompat="@drawable/girl" />
-
-    <ImageView
-        android:id="@+id/girl2image"
-        android:layout_width="84dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="22dp"
-        app:layout_constraintEnd_toStartOf="@+id/textDescript3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/girlimage"
-        app:srcCompat="@drawable/girl2" />
-
-    <ImageView
-        android:id="@+id/boy2image"
-        android:layout_width="84dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="22dp"
-        app:layout_constraintEnd_toStartOf="@+id/textDescript4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/girl2image"
-        app:srcCompat="@drawable/boy2" />
-
-    <ImageView
-        android:id="@+id/girl4image"
-        android:layout_width="84dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="22dp"
-        app:layout_constraintEnd_toStartOf="@+id/textDescript5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boy2image"
-        app:srcCompat="@drawable/girl4" />
-
-    <ImageView
-        android:id="@+id/girl3image"
-        android:layout_width="84dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="23dp"
-        app:layout_constraintEnd_toStartOf="@+id/textDescript6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/girl4image"
-        app:srcCompat="@drawable/girl3" />
-
-    <TextView
-        android:id="@+id/textDescript1"
-        android:layout_width="272dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="12dp"
-        android:text="Julian"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textDescript2"
-        android:layout_width="272dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="15dp"
-        android:text="Jess"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDescript1" />
-
-    <TextView
-        android:id="@+id/textDescript3"
-        android:layout_width="272dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="15dp"
-        android:text="Nadine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDescript2" />
-
-    <TextView
-        android:id="@+id/textDescript4"
-        android:layout_width="272dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="15dp"
-        android:text="Dominic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDescript3" />
-
-    <TextView
-        android:id="@+id/textDescript5"
-        android:layout_width="272dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="15dp"
-        android:text="Sarah"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDescript4" />
-
-    <TextView
-        android:id="@+id/textDescript6"
-        android:layout_width="272dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="16dp"
-        android:text="Ashley"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDescript5" />
-
-    <TextView
-        android:id="@+id/contactsText"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="37dp"
-        android:text="Contacts"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@color/my_primary"
+        android:padding="10dp"
+        android:id="@+id/main_toolbar">
 
-    <Button
-        android:id="@+id/addButton"
-        android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"/>
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon_search"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/main_search_button"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_toolbar"
+        android:layout_above="@+id/divider"
+        android:id="@+id/main_frame_layout"
+        />
+
+    <!-- Contact 1 Person -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="40dp"
-        android:text="Add"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:background="@drawable/edit_text_rounded_corner"
+        android:id="@+id/contact1"
+        android:layout_below="@id/main_toolbar"
+        android:layout_margin="10dp"
+        android:elevation="2dp">
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/circular_bg"
+            android:src="@drawable/person_icon"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            app:tint="@color/red"
+            android:backgroundTint="@color/off_white"
+            android:id="@+id/profile_pic_image_view"/>
+
+
+        <include layout="@layout/profile_pic_view"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jay"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/name_text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1-234-567-8910"
+                android:id="@+id/phone_text"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Contact 2 Person -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:id="@+id/contact2"
+        android:layout_below="@id/contact1"
+        android:layout_margin="10dp"
+        android:elevation="2dp">
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/circular_bg"
+            android:src="@drawable/person3_icon"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            app:tint="@color/my_secondary"
+            android:backgroundTint="@color/off_white"
+            android:id="@+id/profile2_pic_image_view"/>
+
+        <include layout="@layout/profile_pic_view"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sophia"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/name2_text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1-987-654-3210"
+                android:id="@+id/phone2_text"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Contact 3 Person -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:id="@+id/contact3"
+        android:layout_below="@id/contact2"
+        android:layout_margin="10dp"
+        android:elevation="2dp">
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/circular_bg"
+            android:src="@drawable/person4_icon"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            app:tint="@color/my_primary"
+            android:backgroundTint="@color/off_white"
+            android:id="@+id/profile3_pic_image_view"/>
+
+        <include layout="@layout/profile_pic_view"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ben"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/name3_text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1-432-765-0981"
+                android:id="@+id/phone3_text"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:id="@+id/divider"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/bottom_navigation"
+        app:menu="@menu/bottom_navigation_menu"/>
+
+
+</RelativeLayout>
