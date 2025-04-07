@@ -26,6 +26,7 @@ public class LoginCodeActivity extends AppCompatActivity {
 
     CountDownTimer countDownTimer;
 
+    Button backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +55,14 @@ public class LoginCodeActivity extends AppCompatActivity {
         nextButton.setOnClickListener(v ->{
             //start LoginUsernameActivity when next btn pressed
             Intent intent = new Intent(LoginCodeActivity.this, LoginUsernameActivity.class);
+            startActivity(intent);
+        });
+
+        backBtn = findViewById(R.id.back_btn);
+
+        //backbutton pressed, returns to prev screen
+        backBtn.setOnClickListener(v->{
+            Intent intent = new Intent(LoginCodeActivity.this, LoginPhoneNumberActivity.class);
             startActivity(intent);
         });
 

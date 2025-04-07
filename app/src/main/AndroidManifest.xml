@@ -25,6 +25,21 @@
             android:name=".shoppingPage"
             android:exported="false" />
         <activity
+            android:name=".ChatMessagingBox3"
+            android:exported="false" />
+        <activity
+            android:name=".ChatMessagingBox2"
+            android:exported="false" />
+        <activity
+            android:name=".ChatMessagingBox"
+            android:exported="false" />
+        <activity
+            android:name=".Chat"
+            android:exported="false" />
+        <activity
+            android:name=".ChatRoom"
+            android:exported="false" />
+        <activity
             android:name=".SearchUserActivity"
             android:exported="false" />
         <activity
