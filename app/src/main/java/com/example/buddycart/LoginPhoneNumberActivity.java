@@ -17,6 +17,7 @@ public class LoginPhoneNumberActivity extends AppCompatActivity {
 
     EditText phoneInput;
     Button sendCodeBtn;
+    Button backBtn;
     ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +27,14 @@ public class LoginPhoneNumberActivity extends AppCompatActivity {
 
         phoneInput = findViewById(R.id.login_mobile_number);
         sendCodeBtn = findViewById(R.id.send_code_btn);
-        progressBar = findViewById(R.id.login_progress_bar);
+        backBtn = findViewById(R.id.back_btn);
 
-        progressBar.setVisibility(View.GONE);
+        //backbutton pressed, returns to prev screen
+        backBtn.setOnClickListener(v->{
+            Intent intent = new Intent(LoginPhoneNumberActivity.this, Contacts.class);
+            startActivity(intent);
+        });
+
 
         sendCodeBtn.setOnClickListener((v)->{
 

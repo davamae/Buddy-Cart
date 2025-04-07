@@ -21,6 +21,7 @@ public class LoginUsernameActivity extends AppCompatActivity {
     Button nextBtn;
     ProgressBar progressBar;
     String phoneNumber;
+    Button backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,13 @@ public class LoginUsernameActivity extends AppCompatActivity {
             startActivity(intent2);
         });
 
+        backBtn = findViewById(R.id.back_btn);
+
+        //backbutton pressed, returns to prev screen
+        backBtn.setOnClickListener(v->{
+            Intent intent = new Intent(LoginUsernameActivity.this, LoginCodeActivity.class);
+            startActivity(intent);
+        });
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
