@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "839736050988",
+    "project_id": "buddycart-17a5d",
+    "storage_bucket": "buddycart-17a5d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839736050988:android:4243b7edaf6bf4b1235889",
+        "android_client_info": {
+          "package_name": "com.example.buddycart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCISjwNvi8B5MXymdOEQdXEU7B_ygSttM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
