@@ -39,6 +39,17 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
+        //mapimageButton clicklistener
+        ImageButton mapImageButton = findViewById(R.id.mapImageButton);
+        mapImageButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                //navigate to map screen when mapImageButton clicked
+                Intent intent = new Intent(MainActivity2.this, Map.class);
+                startActivity(intent);
+            }
+        });
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
