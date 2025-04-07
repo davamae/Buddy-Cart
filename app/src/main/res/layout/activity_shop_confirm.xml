@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopConfirm">
+
+    <ImageButton
+        android:id="@+id/minusBtn"
+        android:layout_width="30dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_remove_24"
+        app:layout_constraintEnd_toStartOf="@+id/sumCounter"
+        app:layout_constraintTop_toBottomOf="@+id/showItemImg" />
+
+    <ImageView
+        android:id="@+id/showItemImg"
+        android:layout_width="243dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/apple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addToCart" />
+
+    <TextView
+        android:id="@+id/addToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Add XXX to cart?"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="@color/off_white"
+        android:text="Cancel"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sumCounter"
+        app:strokeColor="@color/black"
+        app:strokeWidth="@dimen/material_emphasis_high_type" />
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/my_primary"
+        android:text="Confirm"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sumCounter"
+        app:strokeColor="@color/black"
+        app:strokeWidth="@dimen/material_emphasis_high_type" />
+
+    <TextView
+        android:id="@+id/sumCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showItemImg" />
+
+    <ImageButton
+        android:id="@+id/plusBtn"
+        android:layout_width="30dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add_icon"
+        app:layout_constraintStart_toEndOf="@+id/sumCounter"
+        app:layout_constraintTop_toBottomOf="@+id/showItemImg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
