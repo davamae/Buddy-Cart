@@ -9,7 +9,17 @@
         android:icon="@drawable/home_icon"
         android:id="@+id/menu_home"/>
 
+    <item android:title="Map"
+        android:icon="@drawable/maps"
+        android:id="@+id/menu_map"/>
+
+    <item android:title="Cart"
+        android:icon="@drawable/cart"
+        android:id="@+id/menu_cart"/>
+
     <item android:title="Add"
         android:icon="@drawable/add_icon"
         android:id="@+id/menu_add"/>
+
+
 </menu>
