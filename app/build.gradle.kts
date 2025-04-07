@@ -44,17 +44,17 @@ android {
 
 //Adds a plugin that helps with implementing the map
 buildscript {
-dependencies {
-    implementation("com.google.android.gms:play-services-maps:19.1.0")
-    implementation(libs.appcompat)
-    implementation(libs.material)
-    implementation(libs.activity)
-    implementation(libs.constraintlayout)
-    implementation(libs.firebase.firestore)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.ext.junit)
-    androidTestImplementation(libs.espresso.core)
+    dependencies {
+        implementation("com.google.android.gms:play-services-maps:19.1.0")
+        implementation(libs.appcompat)
+        implementation(libs.material)
+        implementation(libs.activity)
+        implementation(libs.constraintlayout)
+        implementation(libs.firebase.firestore)
+        testImplementation(libs.junit)
+        androidTestImplementation(libs.ext.junit)
+        androidTestImplementation(libs.espresso.core)
 
 
-
+    }
 }
