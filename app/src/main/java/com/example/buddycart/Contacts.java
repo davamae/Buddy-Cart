@@ -85,6 +85,17 @@ public class Contacts extends AppCompatActivity {
                     Intent intent2 = new Intent(Contacts.this, MainActivity2.class);
                     startActivity(intent2);
                 }
+
+                if(item.getItemId() == R.id.menu_map){
+                    Intent intent2 = new Intent(Contacts.this, Map.class);
+                    startActivity(intent2);
+                }
+
+                if(item.getItemId() == R.id.menu_cart){
+                    Intent intent2 = new Intent(Contacts.this, CheckoutScreen.class);
+                    startActivity(intent2);
+                }
+
                 if(item.getItemId() == R.id.menu_add){
                     Intent intent = new Intent(Contacts.this, LoginPhoneNumberActivity.class);
                     startActivity(intent);
