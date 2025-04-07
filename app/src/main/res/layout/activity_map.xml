@@ -12,61 +12,128 @@
     tools:context=".Map">
 
 
+    <!-- The map -->
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="710dp"
         app:layout_constraintBottom_toTopOf="@+id/cartImageButton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:context=".Map"
-        tools:layout_editor_absoluteX="18dp" />
+        tools:layout_editor_absoluteX="2dp" />
 
+
+
+    <!-- The pull up menu -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="350dp"
+                android:layout_height="54dp"
+                android:src="@drawable/add_icon" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No one currently shopping..." />
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <!-- The background to cover the pull up menu -->
+    <View
+        android:id="@+id/bottomWhiteSheet"
+        android:layout_width="451dp"
+        android:layout_height="78dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!-- The button for the checkout -->
     <ImageButton
         android:id="@+id/cartImageButton"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_marginEnd="168dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="#00FFFFFF"
         android:scaleType="centerInside"
         android:src="@drawable/cart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+
+    <!-- The button for the main page -->
     <ImageButton
         android:id="@+id/houseImageButton"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_marginEnd="324dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="#00FFFFFF"
         android:scaleType="centerInside"
         android:src="@drawable/house"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+
+    <!-- The button for the map -->
     <ImageButton
         android:id="@+id/mapimageButton"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_marginEnd="248dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="#00FFFFFF"
         android:scaleType="centerInside"
         android:src="@drawable/maps"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+
+    <!-- The button for the contacts -->
     <ImageButton
         android:id="@+id/bellimageButton"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_marginEnd="92dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="#00FFFFFF"
         android:scaleType="centerInside"
         android:src="@drawable/bell"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+
+    <!-- The button for the person -->
     <ImageButton
         android:id="@+id/personImageButton"
         android:layout_width="57dp"
@@ -74,10 +141,13 @@
         android:layout_margin="16dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="#00FFFFFF"
         android:scaleType="centerInside"
         android:src="@drawable/person"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

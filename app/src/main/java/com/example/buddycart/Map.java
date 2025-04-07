@@ -5,7 +5,14 @@ import androidx.fragment.app.FragmentActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+//BottomSheet
+import android.widget.FrameLayout;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+
+
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -14,6 +21,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.buddycart.databinding.ActivityMapBinding;
+
 
 public class Map extends FragmentActivity implements OnMapReadyCallback {
 
@@ -65,23 +73,23 @@ public class Map extends FragmentActivity implements OnMapReadyCallback {
             }
         });
 
+        // Functionality for the pull up menu
+        LinearLayout bottomSheet = findViewById(R.id.bottom_sheet);
+        BottomSheetBehavior<LinearLayout> behavior = BottomSheetBehavior.from(bottomSheet);
+        behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+
     }
 
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng kelowna = new LatLng(50, 120);
+        // Add a marker in Kelowna and move the camera
+        LatLng kelowna = new LatLng(50, -120);
         mMap.addMarker(new MarkerOptions().position(kelowna).title("Marker in Kelowna"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(kelowna));
     }

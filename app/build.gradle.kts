@@ -46,7 +46,7 @@ buildscript {
     }
 }
 
-secrets {
+/*secrets {
     // To add Maps API key to this project:
     //        MAPS_API_KEY=YOUR_API_KEY
     propertiesFileName = "secrets.properties"
@@ -55,7 +55,7 @@ secrets {
     // checked in version control.
     defaultPropertiesFileName = "local.defaults.properties"
 }
-
+*/
 
 
 dependencies {
