@@ -128,7 +128,7 @@
         android:layout_marginBottom="16dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="centerInside"
-        android:src="@drawable/bell"
+        android:src="@drawable/chat_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

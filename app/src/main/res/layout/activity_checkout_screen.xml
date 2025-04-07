@@ -52,10 +52,9 @@
         android:layout_marginBottom="8dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
-        android:tint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cartImageButton2"
-        app:srcCompat="@drawable/bell" />
+        app:srcCompat="@drawable/chat_icon" />
 
     <ImageButton
         android:id="@+id/personImageButton2"
