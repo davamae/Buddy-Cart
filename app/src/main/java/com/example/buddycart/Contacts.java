@@ -82,7 +82,7 @@ public class Contacts extends AppCompatActivity {
                     getSupportFragmentManager().beginTransaction().replace(R.id.main_frame_layout, chatFragment).commit();
                 }
                 if(item.getItemId() == R.id.menu_home){
-                    Intent intent2 = new Intent(Contacts.this, MainActivity2.class);
+                    Intent intent2 = new Intent(Contacts.this, shoppingPage.class);
                     startActivity(intent2);
                 }
 
@@ -92,7 +92,7 @@ public class Contacts extends AppCompatActivity {
                 }
 
                 if(item.getItemId() == R.id.menu_cart){
-                    Intent intent2 = new Intent(Contacts.this, CheckoutScreen.class);
+                    Intent intent2 = new Intent(Contacts.this, checkout.class);
                     startActivity(intent2);
                 }
 
