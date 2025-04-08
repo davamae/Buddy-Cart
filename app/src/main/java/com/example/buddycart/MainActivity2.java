@@ -49,6 +49,17 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
+        // personImageButton click listener
+        ImageButton personImageButton = findViewById(R.id.personImageButton);
+        personImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to GroupAddActivity when personImageButton is clicked
+                Intent intent = new Intent(MainActivity2.this, GroupAddActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

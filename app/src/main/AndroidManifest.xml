@@ -63,6 +63,8 @@
         <activity
             android:name=".CheckoutScreen"
             android:exported="false" />
+        <activity android:name=".GroupAddActivity" />
+
         <activity
             android:name=".MainActivity2"
             android:exported="false" />
