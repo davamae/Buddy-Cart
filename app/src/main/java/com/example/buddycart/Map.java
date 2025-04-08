@@ -63,12 +63,12 @@ public class Map extends FragmentActivity implements OnMapReadyCallback {
             }
         });
 
-        //mapimageButton clicklistener
+        //houseimageButton clicklistener
         ImageButton mapImageButton = findViewById(R.id.houseImageButton);
         mapImageButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                //navigate to main screen when housImageButton clicked
-                Intent intent = new Intent(Map.this, MainActivity2.class);
+                //navigate to main screen when houseImageButton clicked
+                Intent intent = new Intent(Map.this, shoppingPage.class);
                 startActivity(intent);
             }
         });
