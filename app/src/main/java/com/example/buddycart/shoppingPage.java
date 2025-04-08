@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -42,6 +43,7 @@ public class shoppingPage extends AppCompatActivity {
     private Button sales;
     private Button seeMore1;
     private Button seeMore2;
+    private ImageButton cartBtn;
 
 
     @Override
@@ -127,9 +129,41 @@ public class shoppingPage extends AppCompatActivity {
             }
         });
 
+        //other important buttons
+        cartBtn = findViewById(R.id.cartBtn);
+        cartBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(shoppingPage.this, checkout.class);
+                startActivity(intent);
+            }
+        });
 
 
+        //non functional buttons
+        fav = findViewById(R.id.favBtn);
+        fav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(shoppingPage.this, "Will one day lead to a page of favourited items", Toast.LENGTH_SHORT).show();
+            }
+        });
 
+        history = findViewById(R.id.historyBtn);
+        history.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(shoppingPage.this, "Will one day lead to a previously purchased page", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        sales = findViewById(R.id.ordersBtn);
+        sales.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(shoppingPage.this, "Will one day lead to a page with ongoing sales", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 
