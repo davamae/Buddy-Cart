@@ -181,7 +181,7 @@ public class GroupAddActivity extends AppCompatActivity {
         houseImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(GroupAddActivity.this, MainActivity2.class));
+                startActivity(new Intent(GroupAddActivity.this, shoppingPage.class));
                 finish();
             }
         });

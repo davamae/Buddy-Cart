@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         googleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //begin mainActivity2 when google button clicked
+                //begin shoppingPage when google button clicked
                 Intent intent = new Intent(MainActivity.this, shoppingPage.class);
                 startActivity(intent);
             }
