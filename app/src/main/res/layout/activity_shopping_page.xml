@@ -107,7 +107,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
-        android:id="@+id/mapimageButton2"
+        android:id="@+id/mapBtn1"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_marginEnd="248dp"
@@ -172,8 +172,7 @@
         app:iconSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seachbarMain"
-        app:strokeColor="@color/black"
-        app:strokeWidth="@dimen/material_emphasis_high_type" />
+        />
 
     <Button
         android:id="@+id/historyBtn"
@@ -188,8 +187,7 @@
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/favBtn"
         app:layout_constraintTop_toBottomOf="@+id/seachbarMain"
-        app:strokeColor="@color/black"
-        app:strokeWidth="@dimen/material_emphasis_high_type" />
+        />
 
     <Button
         android:id="@+id/ordersBtn"
@@ -204,8 +202,7 @@
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/historyBtn"
         app:layout_constraintTop_toBottomOf="@+id/seachbarMain"
-        app:strokeColor="@color/black"
-        app:strokeWidth="@dimen/material_emphasis_high_type" />
+        />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -304,22 +301,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Watermellon"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="597dp" />
-
-    <Button
-        android:id="@+id/seeMoreBtn"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/squarebtn"
-        android:text="See More.."
-        android:textColor="@color/black"
-        android:padding="0dp"
-        app:layout_constraintStart_toEndOf="@+id/watBtn"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:strokeColor="@color/black"
-        app:strokeWidth="@dimen/material_emphasis_high_type"/>
+        app:layout_constraintEnd_toEndOf="@+id/watBtn"
+        app:layout_constraintStart_toStartOf="@+id/watBtn"
+        app:layout_constraintTop_toBottomOf="@+id/watBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

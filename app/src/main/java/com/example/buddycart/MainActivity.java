@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Please enter a valid email address", Toast.LENGTH_SHORT).show();
                 } else {
                     //open second activity screen
-                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                    Intent intent = new Intent(MainActivity.this, shoppingPage.class);
                     startActivity(intent);
                 }
             }
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //begin mainActivity2 when google button clicked
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                Intent intent = new Intent(MainActivity.this, shoppingPage.class);
                 startActivity(intent);
             }
         });

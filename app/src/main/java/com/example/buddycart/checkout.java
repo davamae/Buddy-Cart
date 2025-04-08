@@ -25,6 +25,7 @@ public class checkout extends AppCompatActivity {
     private TextView taxView;
     private TextView totalView;
     private TextView cartList;
+    private Button returnC;
 
 
 
@@ -55,6 +56,10 @@ public class checkout extends AppCompatActivity {
         double taxes = subtotal * 0.0725;
         double total = subtotal + taxes;
 
+        //make sure total and taxes dont have too many trailing numbers
+        taxes = Math.floor(taxes*100)/100;
+        total = Math.floor(total*100)/100;
+
         //Show list of items on screen
         int numOfItems = shoppingPage.costItem.size(); //record number of items in list
 
@@ -70,10 +75,17 @@ public class checkout extends AppCompatActivity {
         totalView = findViewById(R.id.totalHere);
         cartList = findViewById(R.id.cartListHere);
 
-        subtotalView.setText("" + subtotal);
-        taxView.setText("" + taxes);
-        totalView.setText("" + total);
-        cartList.setText(showItems);
+        if (shoppingPage.costItem.size() > 0) { //set to updated values
+            subtotalView.setText(subtotal + "$");
+            taxView.setText(taxes + "$");
+            totalView.setText(total + "$");
+            cartList.setText(showItems);
+        } else { //have a basic retun that informs the user the cart is empty
+            subtotalView.setText("" + 0.00 + "$");
+            taxView.setText(0.00 + "$");
+            totalView.setText("" + 0.00 + "$");
+            cartList.setText("Cart is empty");
+        }
 
         //Buttons
         newPayment = findViewById(R.id.changePayBtn);
@@ -99,6 +111,13 @@ public class checkout extends AppCompatActivity {
             }
         });
 
+        returnC = findViewById(R.id.canclBtn);
+        returnC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
 
 

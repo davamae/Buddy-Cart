@@ -2,7 +2,6 @@ package com.example.buddycart;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +15,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
-import java.util.BitSet;
 
 public class shoppingPage extends AppCompatActivity {
 
@@ -56,6 +54,18 @@ public class shoppingPage extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        //make sure shopping list has been created
+        if (cartContents==null){
+            cartContents = new ArrayList<String>();
+        }
+        if (ammountInCart==null){
+            ammountInCart = new ArrayList<Integer>();
+        }
+        if (costItem==null){
+            costItem = new ArrayList<Double>();
+        }
+
 
         //Handles when a user presses one of the shopping items
         apple = findViewById(R.id.appleBtn);
@@ -166,9 +176,44 @@ public class shoppingPage extends AppCompatActivity {
         });
 
 
+        //OnCreate bottom bar functions
+        //bellimageButton clicklistener
+        ImageButton bellImageButton = findViewById(R.id.bellimageButton3);
+        bellImageButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                //navigate to Contacts screen when bellImageButton clicked
+                Intent intent = new Intent(shoppingPage.this, Contacts.class);
+                startActivity(intent);
+            }
+        });
+
+        //mapimageButton clicklistener
+        ImageButton mapImageButton = findViewById(R.id.mapBtn1);
+        mapImageButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                //navigate to map screen when mapImageButton clicked
+                Intent intent = new Intent(shoppingPage.this, Map.class);
+                startActivity(intent);
+            }
+        });
+
+        // personImageButton click listener
+        ImageButton personImageButton = findViewById(R.id.personImageButton3);
+        personImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to GroupAddActivity when personImageButton is clicked
+                Intent intent = new Intent(shoppingPage.this, GroupAddActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
-
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
 
 
 
