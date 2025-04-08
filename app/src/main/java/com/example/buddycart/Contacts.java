@@ -92,7 +92,7 @@ public class Contacts extends AppCompatActivity {
                 }
 
                 if(item.getItemId() == R.id.menu_cart){
-                    Intent intent2 = new Intent(Contacts.this, CheckoutScreen.class);
+                    Intent intent2 = new Intent(Contacts.this, checkout.class);
                     startActivity(intent2);
                 }
 

@@ -28,6 +28,7 @@ public class shopConfirm extends AppCompatActivity {
     //setup features
     private TextView wantToBuyX;
     private ImageView showBuy;
+    private TextView sumCount;
 
 
     @Override
@@ -52,41 +53,29 @@ public class shopConfirm extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         // do activities
         counter = 1;
         add = findViewById(R.id.plusBtn);
         sub = findViewById(R.id.minusBtn);
         confirm = findViewById(R.id.confirmBtn);
         cancel = findViewById(R.id.cancelBtn);
+        sumCount = findViewById(R.id.sumCounter);
 
         //add and subtraction commands
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 counter++;
+                sumCount.setText(counter + "");
             }
+
         });
         sub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (counter > 1) {
                     counter--;
+                    sumCount.setText(counter + "");
                 }
             }
         });
