@@ -66,6 +66,7 @@ public class checkout extends AppCompatActivity {
         String showItems = "";
         for (int j = 0; j < numOfItems; j++){
             double thisItemPrice = shoppingPage.costItem.get(j) * shoppingPage.ammountInCart.get(j);
+            thisItemPrice = Math.floor(thisItemPrice*100)/100;
             showItems = showItems + "Item " + j+1 + ": " + shoppingPage.cartContents.get(j) + " Quantity: " + shoppingPage.ammountInCart.get(j) + " Total Price: " + thisItemPrice + "\n";
         }
 
