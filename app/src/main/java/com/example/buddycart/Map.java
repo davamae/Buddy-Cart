@@ -89,8 +89,12 @@ public class Map extends FragmentActivity implements OnMapReadyCallback {
         mMap = googleMap;
 
         // Add a marker in Kelowna and move the camera
-        LatLng kelowna = new LatLng(50, -120);
+        LatLng kelowna = new LatLng(49.8889, -119.4252);
         mMap.addMarker(new MarkerOptions().position(kelowna).title("Marker in Kelowna"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(kelowna));
+
+        float zoomLevel = 13.0f;
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(kelowna, zoomLevel));
+
     }
 }

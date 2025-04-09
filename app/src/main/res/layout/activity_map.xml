@@ -46,7 +46,6 @@
             app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
 
-
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="350dp"
@@ -54,11 +53,61 @@
                 android:src="@drawable/add_icon" />
 
 
-            <TextView
-                android:id="@+id/textView"
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ben_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/sophia_contact"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="2dp"
+            app:layout_anchor="@+id/bottom_sheet"
+            app:layout_anchorGravity="center">
+
+            <ImageView
+                android:id="@+id/profile3_pic_image_view"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circular_bg"
+                android:backgroundTint="@color/off_white"
+                android:padding="2dp"
+                android:src="@drawable/person4_icon"
+                app:tint="@color/my_primary" />
+
+            <include
+                layout="@layout/profile_pic_view"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="No one currently shopping..." />
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ben"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/phone3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Currently near Walmart" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
