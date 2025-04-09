@@ -57,6 +57,7 @@ public class checkout extends AppCompatActivity {
         double total = subtotal + taxes;
 
         //make sure total and taxes dont have too many trailing numbers
+        subtotal = Math.floor(subtotal*100)/100;
         taxes = Math.floor(taxes*100)/100;
         total = Math.floor(total*100)/100;
 
